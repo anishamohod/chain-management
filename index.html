@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chain Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Chain / Company Management</h2>
+
+<div class="form">
+    <input type="text" id="companyName" placeholder="Company Name">
+    <input type="text" id="gstnNo" placeholder="GSTN Number">
+    <select id="groupName">
+        <option value="">Select Group</option>
+        <option>Persian Darbar</option>
+        <option>Mumbai Darbar</option>
+        <option>Chennai Darbar</option>
+    </select>
+    <button onclick="addCompany()">Add Company</button>
+</div>
+
+<h3>Dashboard</h3>
+
+<input type="text" id="filterGroup" placeholder="Filter by Group" onkeyup="filterData()">
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Company</th>
+            <th>GSTN</th>
+            <th>Group</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
